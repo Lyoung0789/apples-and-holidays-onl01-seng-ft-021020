@@ -53,8 +53,8 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   
     holiday_hash.each do |season, holiday|
     if season == :spring 
-      holiday.each do |holiday_hash, item|
-        if holiday_hash == :memorial_day
+      holiday.each do |holiday_hash_2, item|
+        if holiday_hash_2 == :memorial_day
           item << supply
         end
       end 
@@ -106,6 +106,8 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
+  
+  # 
 new_array=[]
   holiday_hash.each do |season, holiday|
     holiday.each do |holiday, items|
