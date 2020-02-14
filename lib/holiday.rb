@@ -93,6 +93,8 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
+  
+  #Super difficult, had to convert the holiday to string then remove the "_" by converting back to array, then iterate through each index to capitalize, then finally join back together to a string. 
 holiday_hash.each do |key, value|
     puts "#{key.capitalize}:".chomp
     value.each do |holiday , supplies|
